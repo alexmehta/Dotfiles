@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/alex/.oh-my-zsh"
+export ZSH="/home/alexmehta/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -10,7 +10,6 @@ export ZSH="/home/alex/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 
 ZSH_THEME="agnoster" # (this is one of the fancy ones)
-# see https://github.com/ohmyzsh/ohmyzsh/wiki/Themes#agnoster
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -32,7 +31,7 @@ ZSH_THEME="agnoster" # (this is one of the fancy ones)
 # DISABLE_UPDATE_PROMPT="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
+export UPDATE_ZSH_DAYS=5
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
@@ -102,17 +101,17 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
-source /home/alex/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-
-bindkey '^ ' autosuggest-accept
-ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
+alias zshconfig="mate ~/.zshrc"
+alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
 #Aliases
 #common
 alias xammp="sudo /opt/lampp/lampp start"
 alias config="nano ~/.zshrc"
+
+
+
+#binds
+
+bindkey '^ ' autosuggest-accept
